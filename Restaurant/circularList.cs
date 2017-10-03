@@ -125,7 +125,7 @@ namespace Restaurant
                         head = new Node(item);
                         head.next = n;
 
-                        //Fix tail pointing to new head
+                        //Tail pointing to new head
                         while(true)
                         {
                             if(tail.next == n)
@@ -294,38 +294,4 @@ namespace Restaurant
 
     }
 
-
-    public class circularTest
-    {
-        circularList testList;
-
-        public circularTest(circularList list)
-        {
-            testList = list;
-        }
-
-
-        public void testAdd()
-        {
-            testList.Add("a");
-            testList.Add("b");
-            testList.Add("c");
-        }
-
-        public void testDebug()
-        {
-            testList.debug_print();
-        }
-
-        public void testDelete()
-        {
-            testList.deleteItem(2);
-        }
-
-        public void testInsert()
-        {
-            testList.insert(4, "d");
-        }
-
-    }
 }

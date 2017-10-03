@@ -247,38 +247,4 @@ namespace Restaurant
             return accessNode;
         }
     }
-
-    public class llTest
-    {
-        linkedList testList;
-
-        public llTest(linkedList list)
-        {
-            testList = list;
-        }
-
-
-        public void testAdd()
-        {
-            testList.Add("a");
-            testList.Add("b");
-            testList.Add("c");
-        }
-
-        public void testDebug()
-        {
-            testList.debug_print();
-        }
-
-        public void testDelete()
-        {
-            testList.deleteItem(2);
-        }
-
-        public void testInsert()
-        {
-            testList.insert(4, "d");
-        }
-
-    }
 }

@@ -3,16 +3,30 @@ namespace Restaurant
 {
     public class stack : linkedList
     {
+		/*
+		 * A linked list implementation of a stack.
+		 * This extends the LinkedList class, adding the typical stack methods to the class.
+		 * In other words, this class uses "Inheritance" instead of "Composition".
+        */
+
+        //Default Constructor
         public stack()
         {
             
         }
 
-        public void push(string item)
+		//Pushes an item onto the stack
+		public void push(string item)
         {
             Add(item);
         }
 
+		/*
+         * Pops an item from the stack.  This is done as follows:
+            1. Get the last node in the list.
+            2. Delete the node from the list.
+            3. Return the value of the node.
+        */
         public string pop()
         {
             string temp = getItem(getSize() - 1);
@@ -20,33 +34,5 @@ namespace Restaurant
             return temp;
         }
 
-    }
-
-    public class stackTest
-    {
-        stack testList;
-
-        public stackTest(stack list)
-        {
-            testList = list;
-        }
-
-
-        public void testAdd()
-        {
-            testList.push("a");
-            testList.push("b");
-            testList.push("c");
-        }
-
-        public void testDebug()
-        {
-            testList.debug_print();
-        }
-
-        public void testDelete()
-        {
-            testList.pop();
-        }
     }
 }

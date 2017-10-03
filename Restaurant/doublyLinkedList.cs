@@ -242,37 +242,4 @@ namespace Restaurant
 
 	}
 
-	public class doublyTest
-	{
-		doublyLinkedList testList;
-
-		public doublyTest(doublyLinkedList list)
-		{
-			testList = list;
-		}
-
-
-		public void testAdd()
-		{
-			testList.Add("a");
-			testList.Add("b");
-			testList.Add("c");
-		}
-
-		public void testDebug()
-		{
-			testList.debug_print();
-		}
-
-		public void testDelete()
-		{
-			testList.deleteItem(2);
-		}
-
-		public void testInsert()
-		{
-			testList.insert(4, "d");
-		}
-
-	}
 }
